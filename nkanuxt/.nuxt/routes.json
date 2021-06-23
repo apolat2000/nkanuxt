@@ -1,0 +1,16 @@
+[
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "/home/ahmet/Documents/nkanuxt/nkanuxt/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_c0532c04"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/ahmet/Documents/nkanuxt/nkanuxt/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_53a27232"
+  }
+]
