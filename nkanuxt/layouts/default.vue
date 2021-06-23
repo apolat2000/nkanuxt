@@ -24,6 +24,14 @@ export default {
     isLoggedIn () {
       return this.$store.state.isAuthenticated
     }
+  },
+  created () {
+    this.$store.dispatch('auth/refreshToken').then(() => {
+      if (!this.$store.state.isAuthenticated) {
+        this.$store.dispatch('auth/logout')
+        this.$router.push('/login')
+      }
+    })
   }
 }
 </script>

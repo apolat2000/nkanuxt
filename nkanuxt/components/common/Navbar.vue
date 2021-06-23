@@ -50,13 +50,18 @@
       >
         <v-icon>mdi-menu</v-icon>
       </v-btn> -->
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn text>
+      <v-toolbar-items v-if="!isLoggedIn" class="hidden-sm-and-down">
+        <v-btn text :to="'/login'">
           Log in
         </v-btn>
         <v-divider vertical inset />
         <v-btn text>
           Register
+        </v-btn>
+      </v-toolbar-items>
+      <v-toolbar-items v-else>
+        <v-btn text @click="$store.dispatch('auth/logout')">
+          Log out
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>

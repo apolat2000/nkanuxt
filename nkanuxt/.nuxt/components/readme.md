@@ -7,6 +7,7 @@ You can directly use them in pages and other components without the need to impo
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
 - `<AuthLoginForm>` | `<auth-login-form>` (components/auth/LoginForm.vue)
+- `<ProfileUsrPage>` | `<profile-usr-page>` (components/profile/UsrPage.vue)
 - `<CommonFoot>` | `<common-foot>` (components/common/Foot.vue)
 - `<CommonNavbar>` | `<common-navbar>` (components/common/Navbar.vue)
 - `<TutorialTutDesc>` | `<tutorial-tut-desc>` (components/tutorial/TutDesc.vue)
@@ -16,7 +17,6 @@ You can directly use them in pages and other components without the need to impo
 - `<TutorialTutPageSide>` | `<tutorial-tut-page-side>` (components/tutorial/TutPageSide.vue)
 - `<TutorialTutSum>` | `<tutorial-tut-sum>` (components/tutorial/TutSum.vue)
 - `<TutorialTutsSide>` | `<tutorial-tuts-side>` (components/tutorial/TutsSide.vue)
-- `<ProfileUsrPage>` | `<profile-usr-page>` (components/profile/UsrPage.vue)
 - `<TutorialAnnoun>` | `<tutorial-announ>` (components/tutorial/announ/Announ.vue)
 - `<TutorialFeed>` | `<tutorial-feed>` (components/tutorial/feed/Feed.vue)
 - `<TutorialFeedItem>` | `<tutorial-feed-item>` (components/tutorial/feed/FeedItem.vue)

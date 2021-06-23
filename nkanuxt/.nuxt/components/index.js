@@ -1,6 +1,7 @@
 import { wrapFunctional } from './utils'
 
 export { default as AuthLoginForm } from '../../components/auth/LoginForm.vue'
+export { default as ProfileUsrPage } from '../../components/profile/UsrPage.vue'
 export { default as CommonFoot } from '../../components/common/Foot.vue'
 export { default as CommonNavbar } from '../../components/common/Navbar.vue'
 export { default as TutorialTutDesc } from '../../components/tutorial/TutDesc.vue'
@@ -10,7 +11,6 @@ export { default as TutorialTutPageLoading } from '../../components/tutorial/Tut
 export { default as TutorialTutPageSide } from '../../components/tutorial/TutPageSide.vue'
 export { default as TutorialTutSum } from '../../components/tutorial/TutSum.vue'
 export { default as TutorialTutsSide } from '../../components/tutorial/TutsSide.vue'
-export { default as ProfileUsrPage } from '../../components/profile/UsrPage.vue'
 export { default as TutorialAnnoun } from '../../components/tutorial/announ/Announ.vue'
 export { default as TutorialFeed } from '../../components/tutorial/feed/Feed.vue'
 export { default as TutorialFeedItem } from '../../components/tutorial/feed/FeedItem.vue'
@@ -20,6 +20,7 @@ export { default as TutorialListTutList } from '../../components/tutorial/list/T
 export { default as TutorialListTutorPp } from '../../components/tutorial/list/TutorPp.vue'
 
 export const LazyAuthLoginForm = import('../../components/auth/LoginForm.vue' /* webpackChunkName: "components/auth-login-form" */).then(c => wrapFunctional(c.default || c))
+export const LazyProfileUsrPage = import('../../components/profile/UsrPage.vue' /* webpackChunkName: "components/profile-usr-page" */).then(c => wrapFunctional(c.default || c))
 export const LazyCommonFoot = import('../../components/common/Foot.vue' /* webpackChunkName: "components/common-foot" */).then(c => wrapFunctional(c.default || c))
 export const LazyCommonNavbar = import('../../components/common/Navbar.vue' /* webpackChunkName: "components/common-navbar" */).then(c => wrapFunctional(c.default || c))
 export const LazyTutorialTutDesc = import('../../components/tutorial/TutDesc.vue' /* webpackChunkName: "components/tutorial-tut-desc" */).then(c => wrapFunctional(c.default || c))
@@ -29,7 +30,6 @@ export const LazyTutorialTutPageLoading = import('../../components/tutorial/TutP
 export const LazyTutorialTutPageSide = import('../../components/tutorial/TutPageSide.vue' /* webpackChunkName: "components/tutorial-tut-page-side" */).then(c => wrapFunctional(c.default || c))
 export const LazyTutorialTutSum = import('../../components/tutorial/TutSum.vue' /* webpackChunkName: "components/tutorial-tut-sum" */).then(c => wrapFunctional(c.default || c))
 export const LazyTutorialTutsSide = import('../../components/tutorial/TutsSide.vue' /* webpackChunkName: "components/tutorial-tuts-side" */).then(c => wrapFunctional(c.default || c))
-export const LazyProfileUsrPage = import('../../components/profile/UsrPage.vue' /* webpackChunkName: "components/profile-usr-page" */).then(c => wrapFunctional(c.default || c))
 export const LazyTutorialAnnoun = import('../../components/tutorial/announ/Announ.vue' /* webpackChunkName: "components/tutorial-announ" */).then(c => wrapFunctional(c.default || c))
 export const LazyTutorialFeed = import('../../components/tutorial/feed/Feed.vue' /* webpackChunkName: "components/tutorial-feed" */).then(c => wrapFunctional(c.default || c))
 export const LazyTutorialFeedItem = import('../../components/tutorial/feed/FeedItem.vue' /* webpackChunkName: "components/tutorial-feed-item" */).then(c => wrapFunctional(c.default || c))

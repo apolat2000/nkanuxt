@@ -2,6 +2,9 @@
   "AuthLoginForm": {
     "description": "Auto imported from components/auth/LoginForm.vue"
   },
+  "ProfileUsrPage": {
+    "description": "Auto imported from components/profile/UsrPage.vue"
+  },
   "CommonFoot": {
     "description": "Auto imported from components/common/Foot.vue"
   },
@@ -28,9 +31,6 @@
   },
   "TutorialTutsSide": {
     "description": "Auto imported from components/tutorial/TutsSide.vue"
-  },
-  "ProfileUsrPage": {
-    "description": "Auto imported from components/profile/UsrPage.vue"
   },
   "TutorialAnnoun": {
     "description": "Auto imported from components/tutorial/announ/Announ.vue"

@@ -3,6 +3,7 @@ import { wrapFunctional } from './utils'
 
 const components = {
   AuthLoginForm: () => import('../../components/auth/LoginForm.vue' /* webpackChunkName: "components/auth-login-form" */).then(c => wrapFunctional(c.default || c)),
+  ProfileUsrPage: () => import('../../components/profile/UsrPage.vue' /* webpackChunkName: "components/profile-usr-page" */).then(c => wrapFunctional(c.default || c)),
   CommonFoot: () => import('../../components/common/Foot.vue' /* webpackChunkName: "components/common-foot" */).then(c => wrapFunctional(c.default || c)),
   CommonNavbar: () => import('../../components/common/Navbar.vue' /* webpackChunkName: "components/common-navbar" */).then(c => wrapFunctional(c.default || c)),
   TutorialTutDesc: () => import('../../components/tutorial/TutDesc.vue' /* webpackChunkName: "components/tutorial-tut-desc" */).then(c => wrapFunctional(c.default || c)),
@@ -12,7 +13,6 @@ const components = {
   TutorialTutPageSide: () => import('../../components/tutorial/TutPageSide.vue' /* webpackChunkName: "components/tutorial-tut-page-side" */).then(c => wrapFunctional(c.default || c)),
   TutorialTutSum: () => import('../../components/tutorial/TutSum.vue' /* webpackChunkName: "components/tutorial-tut-sum" */).then(c => wrapFunctional(c.default || c)),
   TutorialTutsSide: () => import('../../components/tutorial/TutsSide.vue' /* webpackChunkName: "components/tutorial-tuts-side" */).then(c => wrapFunctional(c.default || c)),
-  ProfileUsrPage: () => import('../../components/profile/UsrPage.vue' /* webpackChunkName: "components/profile-usr-page" */).then(c => wrapFunctional(c.default || c)),
   TutorialAnnoun: () => import('../../components/tutorial/announ/Announ.vue' /* webpackChunkName: "components/tutorial-announ" */).then(c => wrapFunctional(c.default || c)),
   TutorialFeed: () => import('../../components/tutorial/feed/Feed.vue' /* webpackChunkName: "components/tutorial-feed" */).then(c => wrapFunctional(c.default || c)),
   TutorialFeedItem: () => import('../../components/tutorial/feed/FeedItem.vue' /* webpackChunkName: "components/tutorial-feed-item" */).then(c => wrapFunctional(c.default || c)),
