@@ -19,19 +19,19 @@ export default {
   data () {
     return {
     }
-  },
-  computed: {
-    isLoggedIn () {
-      return this.$store.state.isAuthenticated
-    }
-  },
-  created () {
-    this.$store.dispatch('auth/refreshToken').then(() => {
-      if (!this.$store.state.isAuthenticated) {
-        this.$store.dispatch('auth/logout')
-        this.$router.push('/login')
-      }
-    })
   }
+  // computed: {
+  //   isLoggedIn () {
+  //     return this.$store.state.isAuthenticated
+  //   }
+  // }
+  // beforeCreate () {
+  //   this.$store.dispatch('auth/refreshToken').then(() => {
+  //     if (!this.$store.getters.GET_AUTH) {
+  //       this.$store.dispatch('auth/logout')
+  //       this.$router.push('/login')
+  //     }
+  //   })
+  // }
 }
 </script>

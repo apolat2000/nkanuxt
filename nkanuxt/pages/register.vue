@@ -1,6 +1,6 @@
 <template>
   <div
-    id="login"
+    id="register"
   >
     <v-container>
       <v-row
@@ -11,15 +11,9 @@
           <div class="d-flex flex-column align-center">
             <img src="../assets/lightning.png" width="50px;" alt="">
             <h1>
-              Login to NKA
+              Register to NKA
             </h1>
             <login-form style="width: 100%" />
-            <h3 class="mt-8">
-              New around here?
-            </h3>
-            <NuxtLink to="/register">
-              Register
-            </NuxtLink>
           </div>
         </v-col>
       </v-row>

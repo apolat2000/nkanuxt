@@ -15,18 +15,32 @@
       label="Password"
       @click:append="show1 = !show1"
     />
-
-    <v-btn
-      :loading="logInLoading"
-      :disabled="logInLoading"
-      color="success"
-      @click="handleSubmit"
-    >
-      Log in
-      <template #loader>
-        <span>Loading...</span>
-      </template>
-    </v-btn>
+    <div class="d-flex justify-space-between">
+      <v-btn
+        :loading="logInLoading"
+        :disabled="logInLoading"
+        color="success"
+        elevation="10"
+        raised
+        @click="handleSubmit"
+      >
+        Log in
+        <template #loader>
+          <span>Loading...</span>
+        </template>
+      </v-btn>
+      <v-btn
+        :loading="logInLoading"
+        :disabled="logInLoading"
+        color="secondary"
+        @click="handleSubmit"
+      >
+        Forgot my password
+        <template #loader>
+          <span>Loading...</span>
+        </template>
+      </v-btn>
+    </div>
   </v-form>
 </template>
 
@@ -64,7 +78,7 @@ export default {
       }
       this.$store.dispatch('auth/login', user).then(() => {
         // if successfull
-        if (this.$store.getters['auth/GET_AUTH']) {
+        if (this.$store.state.auth.isAuthenticated) {
           window.console.log('cmon')
           this.$router.push('/')
         } else {

@@ -55,7 +55,7 @@
           Log in
         </v-btn>
         <v-divider vertical inset />
-        <v-btn text>
+        <v-btn text :to="'/register'">
           Register
         </v-btn>
       </v-toolbar-items>

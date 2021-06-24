@@ -40,10 +40,10 @@ exports.login = async (req, res) => {
 exports.verifyRefreshToken = (req, res) => {
     const authHeader = req.headers['authorization']
     const token = authHeader && authHeader.split(' ')[1]
-    if (token == null) return res.sendStatus(401) // if there isn't any token
+    //if (token == null) return res.sendStatus(401) // if there isn't any token
     jwt.verify(token, process.env.TOKEN_SECRET, (err, user) => {
         if (err) {
-            res.status(401).send({ status: 'Logged Out' });
+            res.status(401).send({ status: "Token can't be verified." });
         }
         else {
             const userDTO = {

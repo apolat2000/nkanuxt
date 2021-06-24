@@ -7,6 +7,13 @@
     "_name": "_c0532c04"
   },
   {
+    "name": "register",
+    "path": "/register",
+    "component": "/home/ahmet/Documents/nkanuxt/nkanuxt/pages/register.vue",
+    "chunkName": "pages/register",
+    "_name": "_36e9861e"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/home/ahmet/Documents/nkanuxt/nkanuxt/pages/index.vue",
