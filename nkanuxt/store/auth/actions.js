@@ -7,9 +7,7 @@ export default {
         Authorization: `Bearer ${jwt}`
       }
     })
-    window.console.log(res)
     if (res.status === 200) {
-      window.console.log('got in res status')
       commit('SET_JWT', res.data.jwt_token)
       commit('SET_AUTH', true)
       commit('SET_FIRST_NAME', res.data.first_name)
@@ -18,7 +16,6 @@ export default {
     } else {
       // failed
     }
-    window.console.log('action ended')
     commit('SET_LOG_IN_LOADING', false)
   },
   logout ({ commit }) {
@@ -60,7 +57,6 @@ export default {
           Authorization: `Bearer ${jwt}`
         }
       }).then((res) => {
-      window.console.log(res.status)
       if (res.status === 200) {
         commit('SET_JWT', res.data.jwt_token)
         commit('SET_USER_ID', res.data.userID)

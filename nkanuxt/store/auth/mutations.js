@@ -16,5 +16,8 @@ export default {
   },
   SET_USER_ID (state, userId) {
     state.userId = userId
+  },
+  SET_DEBUGGER_MEDIUM (state, sign) {
+    state.sign = sign
   }
 }

@@ -31,7 +31,7 @@
         <img src="~/assets/navlogo.png" alt="navlogo" class="navlogo">
       </div>
       <v-divider class="mx-4" inset vertical />
-      <v-btn text>
+      <v-btn text :to="'/someother'">
         Explore <v-icon>mdi-compass</v-icon>
       </v-btn>
       <v-divider class="mx-4" vertical inset />

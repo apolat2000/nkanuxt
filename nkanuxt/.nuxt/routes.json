@@ -3,18 +3,28 @@
     "name": "login",
     "path": "/login",
     "component": "/home/apolat2000/Documents/nkanuxt/nkanuxt/pages/login.vue",
-    "chunkName": "pages/login"
+    "chunkName": "pages/login",
+    "_name": "_1d107374"
   },
   {
     "name": "register",
     "path": "/register",
     "component": "/home/apolat2000/Documents/nkanuxt/nkanuxt/pages/register.vue",
-    "chunkName": "pages/register"
+    "chunkName": "pages/register",
+    "_name": "_0886fe30"
+  },
+  {
+    "name": "someother",
+    "path": "/someother",
+    "component": "/home/apolat2000/Documents/nkanuxt/nkanuxt/pages/someother.vue",
+    "chunkName": "pages/someother",
+    "_name": "_c2e5f8b2"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/home/apolat2000/Documents/nkanuxt/nkanuxt/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_5368d05d"
   }
 ]

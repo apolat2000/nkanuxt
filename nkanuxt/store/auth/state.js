@@ -4,5 +4,6 @@ export default () => ({
   imgPath: '',
   userId: '',
   isAuthenticated: false,
-  logInLoading: false
+  logInLoading: false,
+  debuggerMedium: false
 })
