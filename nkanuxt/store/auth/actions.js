@@ -1,16 +1,24 @@
 export default {
-  async login ({ commit }, credentials) {
+  async login ({ commit, getters }, credentials) {
+    const jwt = getters.GET_JWT
     commit('SET_LOG_IN_LOADING', true)
-    const res = await this.$axios.$post('login', credentials)
+    const res = await this.$axios.post('login', credentials, {
+      headers: {
+        Authorization: `Bearer ${jwt}`
+      }
+    })
+    window.console.log(res)
     if (res.status === 200) {
+      window.console.log('got in res status')
       commit('SET_JWT', res.data.jwt_token)
       commit('SET_AUTH', true)
       commit('SET_FIRST_NAME', res.data.first_name)
       commit('SET_IMG_PATH', res.data.img_path)
       commit('SET_USER_ID', res.data.userID)
     } else {
-      window.console.log(res.status)
+      // failed
     }
+    window.console.log('action ended')
     commit('SET_LOG_IN_LOADING', false)
   },
   logout ({ commit }) {
@@ -46,7 +54,7 @@ export default {
     //   }
     // }
 
-    this.$axios.$post('verifyRefreshToken', {},
+    this.$axios.post('verifyRefreshToken', {},
       {
         headers: {
           Authorization: `Bearer ${jwt}`

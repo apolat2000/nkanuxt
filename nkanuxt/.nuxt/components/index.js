@@ -1,9 +1,9 @@
 import { wrapFunctional } from './utils'
 
 export { default as AuthLoginForm } from '../../components/auth/LoginForm.vue'
-export { default as ProfileUsrPage } from '../../components/profile/UsrPage.vue'
 export { default as CommonFoot } from '../../components/common/Foot.vue'
 export { default as CommonNavbar } from '../../components/common/Navbar.vue'
+export { default as ProfileUsrPage } from '../../components/profile/UsrPage.vue'
 export { default as TutorialTutDesc } from '../../components/tutorial/TutDesc.vue'
 export { default as TutorialTutForm } from '../../components/tutorial/TutForm.vue'
 export { default as TutorialTutItem } from '../../components/tutorial/TutItem.vue'
@@ -20,9 +20,9 @@ export { default as TutorialListTutList } from '../../components/tutorial/list/T
 export { default as TutorialListTutorPp } from '../../components/tutorial/list/TutorPp.vue'
 
 export const LazyAuthLoginForm = import('../../components/auth/LoginForm.vue' /* webpackChunkName: "components/auth-login-form" */).then(c => wrapFunctional(c.default || c))
-export const LazyProfileUsrPage = import('../../components/profile/UsrPage.vue' /* webpackChunkName: "components/profile-usr-page" */).then(c => wrapFunctional(c.default || c))
 export const LazyCommonFoot = import('../../components/common/Foot.vue' /* webpackChunkName: "components/common-foot" */).then(c => wrapFunctional(c.default || c))
 export const LazyCommonNavbar = import('../../components/common/Navbar.vue' /* webpackChunkName: "components/common-navbar" */).then(c => wrapFunctional(c.default || c))
+export const LazyProfileUsrPage = import('../../components/profile/UsrPage.vue' /* webpackChunkName: "components/profile-usr-page" */).then(c => wrapFunctional(c.default || c))
 export const LazyTutorialTutDesc = import('../../components/tutorial/TutDesc.vue' /* webpackChunkName: "components/tutorial-tut-desc" */).then(c => wrapFunctional(c.default || c))
 export const LazyTutorialTutForm = import('../../components/tutorial/TutForm.vue' /* webpackChunkName: "components/tutorial-tut-form" */).then(c => wrapFunctional(c.default || c))
 export const LazyTutorialTutItem = import('../../components/tutorial/TutItem.vue' /* webpackChunkName: "components/tutorial-tut-item" */).then(c => wrapFunctional(c.default || c))

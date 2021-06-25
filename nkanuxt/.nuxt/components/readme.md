@@ -7,9 +7,9 @@ You can directly use them in pages and other components without the need to impo
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
 - `<AuthLoginForm>` | `<auth-login-form>` (components/auth/LoginForm.vue)
-- `<ProfileUsrPage>` | `<profile-usr-page>` (components/profile/UsrPage.vue)
 - `<CommonFoot>` | `<common-foot>` (components/common/Foot.vue)
 - `<CommonNavbar>` | `<common-navbar>` (components/common/Navbar.vue)
+- `<ProfileUsrPage>` | `<profile-usr-page>` (components/profile/UsrPage.vue)
 - `<TutorialTutDesc>` | `<tutorial-tut-desc>` (components/tutorial/TutDesc.vue)
 - `<TutorialTutForm>` | `<tutorial-tut-form>` (components/tutorial/TutForm.vue)
 - `<TutorialTutItem>` | `<tutorial-tut-item>` (components/tutorial/TutItem.vue)

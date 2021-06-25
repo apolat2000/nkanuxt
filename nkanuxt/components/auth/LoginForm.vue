@@ -78,13 +78,12 @@ export default {
       }
       this.$store.dispatch('auth/login', user).then(() => {
         // if successfull
-        if (this.$store.state.auth.isAuthenticated) {
-          window.console.log('cmon')
-          this.$router.push('/')
+        if (this.$store.getters['auth/GET_AUTH']) {
+          window.console.log('yeey')
+          this.$router.push({ path: '' })
         } else {
           this.alertMessage =
               "We don't seem to have the credentials you typed in as a registered user. Please double-check and try again."
-          window.console.log('fck')
         }
       })
     }

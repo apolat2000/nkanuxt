@@ -3,9 +3,9 @@ import { wrapFunctional } from './utils'
 
 const components = {
   AuthLoginForm: () => import('../../components/auth/LoginForm.vue' /* webpackChunkName: "components/auth-login-form" */).then(c => wrapFunctional(c.default || c)),
-  ProfileUsrPage: () => import('../../components/profile/UsrPage.vue' /* webpackChunkName: "components/profile-usr-page" */).then(c => wrapFunctional(c.default || c)),
   CommonFoot: () => import('../../components/common/Foot.vue' /* webpackChunkName: "components/common-foot" */).then(c => wrapFunctional(c.default || c)),
   CommonNavbar: () => import('../../components/common/Navbar.vue' /* webpackChunkName: "components/common-navbar" */).then(c => wrapFunctional(c.default || c)),
+  ProfileUsrPage: () => import('../../components/profile/UsrPage.vue' /* webpackChunkName: "components/profile-usr-page" */).then(c => wrapFunctional(c.default || c)),
   TutorialTutDesc: () => import('../../components/tutorial/TutDesc.vue' /* webpackChunkName: "components/tutorial-tut-desc" */).then(c => wrapFunctional(c.default || c)),
   TutorialTutForm: () => import('../../components/tutorial/TutForm.vue' /* webpackChunkName: "components/tutorial-tut-form" */).then(c => wrapFunctional(c.default || c)),
   TutorialTutItem: () => import('../../components/tutorial/TutItem.vue' /* webpackChunkName: "components/tutorial-tut-item" */).then(c => wrapFunctional(c.default || c)),

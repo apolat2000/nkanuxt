@@ -8,7 +8,7 @@ const nodemailer = require('nodemailer');
 exports.login = async (req, res) => {
     User.findOne({ email: req.body.email },
         (err, user) => {
-            if (err) res.send(err.message);
+            if (err) res.send(err);
             else if (user) {
                 hashedPasswordInput = bcrypt.hashSync(req.body.password, user.salt);
                 const userDTO = {
@@ -19,13 +19,13 @@ exports.login = async (req, res) => {
                     img_path: user.img_path
                 };
                 if (hashedPasswordInput === user.password) {
-                    res.json({
+                    res.status(200).json({
                         message: "User logged in!",
                         jwt_token: jwt.sign(userDTO, process.env.TOKEN_SECRET, { expiresIn: '1800s' }),
                         userID: userDTO.userID,
                         img_path: userDTO.img_path,
                         first_name: userDTO.first_name
-                    });
+                    })
                 } else {
                     res.status(401).send({ message: "Invalid Login" });
                 }
@@ -52,7 +52,7 @@ exports.verifyRefreshToken = (req, res) => {
                 last_name: user.last_name,
                 email: user.email
             };
-            res.status(200).send({ status: 'Logged In', jwt_token: jwt.sign(userDTO, process.env.TOKEN_SECRET, { expiresIn: '1800s' }), userID: userDTO.userID })
+            res.status(200).send({ jwt_token: jwt.sign(userDTO, process.env.TOKEN_SECRET, { expiresIn: '1800s' }), userID: userDTO.userID })
         }
     });
 }

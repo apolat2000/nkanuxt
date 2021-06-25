@@ -53,7 +53,7 @@ export default {
   axios: {
     baseURL: 'http://localhost:5000/',
     validateStatus (status) {
-      return true
+      return status < 400
     }
   },
 

@@ -3,7 +3,7 @@ export default function ({ store, redirect, route }) {
   if (route.path === '/login' || route.path === '/register') {
     store.dispatch('auth/refreshToken').then(() => {
       // If the user is authenticated
-      if (store.state.isAuthenticated) {
+      if (store.getters['auth/GET_AUTH']) {
         return redirect('/')
       }
     })
@@ -11,7 +11,8 @@ export default function ({ store, redirect, route }) {
   if (route.path !== '/login' || route.path !== '/register' || route.path !== '/') {
     store.dispatch('auth/refreshToken').then(() => {
       // If the user is not authenticated
-      if (!store.state.isAuthenticated) {
+      if (!store.getters['auth/GET_AUTH']) {
+        window.console.log('auth.js')
         store.dispatch('auth/logout')
         return redirect('/login')
       }
